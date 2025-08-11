@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bungee&family=Dosis:wght@200..800&family=Fondamento:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bungee&family=Dosis:wght@577&family=Fondamento:ital@0;1&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+@import "tailwindcss";
+@layer theme,base,components,utilities;
+
+
+@theme{
+
+    --font-primary: "Fondamento", cursive;
+    --font-fam: "Winky Rough", sans-serif;
+    --color-green: #01854c;
+    --color-focus: #00cc74;
+    --color-light: rgb(240 243 242);
+    --color-linkedin: #0a66c2;
+    --color-instagram: #FF115B;
+    --color-facebook: #0866ff;
+    --color-star: #ffc908;
+    
+}
+
+@components{
+    .hover-nav{
+        @apply hover:text-green-300
+    }
+
+    .focus-nav{
+        @apply focus:text-green focus:font-extrabold
+    }
+
+}
+
+@base{
+
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  50% { transform: translateX(4px); }
+  75% { transform: translateX(-4px); }
+}
+
+.shake-on-hover:hover {
+  animation: shake 0.5s infinite ease-in-out;
+}
+
+
+
